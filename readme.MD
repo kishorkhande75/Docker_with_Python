@@ -28,8 +28,8 @@ The **'Dockerfile'** sets up an Ubuntu 18.04 base image, installs Python 3 and r
 
 ## Dockerfile
 
-	<code>**FROM ubuntu:18.04**</code>
-	<code>**RUN apt-get update && apt-get install -y python3-pip**</code>
+      <code>**FROM ubuntu:18.04**</code>
+      <code>**RUN apt-get update && apt-get install -y python3-pip**</code>
 
     <code>**RUN pip3 install numpy**</code>
 
@@ -50,6 +50,3 @@ The **'Dockerfile'** sets up an Ubuntu 18.04 base image, installs Python 3 and r
        print("Welcome in auto_run_project")</code>**
 
 Feel free to customize the run.py script or modify the Dockerfile to suit your project's needs. Happy coding!
-
-
-
