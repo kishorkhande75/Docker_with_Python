@@ -28,12 +28,10 @@ The **'Dockerfile'** sets up an Ubuntu 18.04 base image, installs Python 3 and r
 
 ## Dockerfile
 
-      <code>**FROM ubuntu:18.04**</code>
-      <code>**RUN apt-get update && apt-get install -y python3-pip**</code>
-
-    <code>**RUN pip3 install numpy**</code>
-
-    <code>**RUN pip3 install pandas**</code>
+      <code>FROM ubuntu:18.04</code>
+      <code>RUN apt-get update && apt-get install -y python3-pip</code>
+      <code>RUN pip3 install numpy</code>
+      <code>**RUN pip3 install pandas**</code>
 
     <code>**COPY run.py run.py**</code>
 
