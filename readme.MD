@@ -25,28 +25,27 @@ That's it! The Python script will start running, and you'll see the "Welcome in 
  
  The **'Dockerfile'** sets up an Ubuntu 18.04 base image, installs Python 3 and required dependencies (**'numpy"** and **'pandas'**), and copies the **'run.py'** script into the container. The **CMD** instruction specifies the command to run when the container starts.
 
-#dockerfile
+#Dockerfile
 
 <code>**FROM ubuntu:18.04**</code>
+<code>**RUN apt-get update && apt-get install -y python3-pip**</code>
+<code>**RUN pip3 install numpy**</code>
+<code>**RUN pip3 install pandas**</code>
+<code>**COPY run.py run.py**</code>
 
-RUN apt-get update && apt-get install -y python3-pip
-RUN pip3 install numpy
-RUN pip3 install pandas
-COPY run.py run.py
+<code>**CMD ["python3", "run.py"]**</code>
 
-CMD ["python3", "run.py"]
-run.py
-The run.py file contains a simple Python script with an infinite loop that prints the welcome message.
+# Run.py file
+The **'run.py'** file contains a simple Python script with an infinite loop that prints the welcome message.
 
-python
-Copy code
-# python code
+# Python file
 
-while True:
-    print("Welcome in auto_run_project")
+<code>**# python code</code>**
+
+<code>**while True:
+   print("Welcome in auto_run_project")</code>**
+
 Feel free to customize the run.py script or modify the Dockerfile to suit your project's needs. Happy coding!
-
-
 
 
 
