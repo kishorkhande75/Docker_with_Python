@@ -29,18 +29,24 @@ The **'Dockerfile'** sets up an Ubuntu 18.04 base image, installs Python 3 and r
 ## Dockerfile
 
 <code>**FROM ubuntu:18.04**</code>
+
 <code>**RUN apt-get update && apt-get install -y python3-pip**</code>
-      **RUN pip3 install numpy**
-      **RUN pip3 install pandas**
-      **COPY run.py run.py**
-      **CMD ["python3", "run.py"]**
+
+<code>**RUN pip3 install numpy**</code>
+
+<code>**RUN pip3 install pandas**</code>
+
+<code>**COPY run.py run.py**</code>
+
+<code>**CMD ["python3", "run.py"]**</code>
+
 
 ## Run.py file
   The **'run.py'** file contains a simple Python script with an infinite loop that prints the welcome message.
 
 ## Python file
 
-    <code>**# python code</code>**
+<code>**# python code</code>**
 
     <code>**while True:
        print("Welcome in auto_run_project")</code>**
