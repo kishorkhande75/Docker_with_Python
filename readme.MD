@@ -13,11 +13,11 @@ Docker installed on your machine
 
 2. **Build the Docker image:**
 
-  <code>docker build -t auto-run-project .</code>
-
+      <code>**docker build -t auto-run-project .**</code>
+	
 3. Run the Docker container:
 
-  <code>docker run auto-run-project </code>
+      <code>**docker run auto-run-project**</code>
 
 That's it! The Python script will start running, and you'll see the "Welcome in auto_run_project" message printed continuously.
 
