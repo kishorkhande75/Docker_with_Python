@@ -23,13 +23,13 @@ That's it! The Python script will start running, and you'll see the "Welcome in 
 
 ## Dockerfile
  
-The **'Dockerfile'** sets up an Ubuntu 18.04 base image, installs Python 3 and required dependencies (**'numpy"** and **'pandas'**), and copies the **'run.py'** script into the container. The **CMD** instruction specifies the command to run when the container starts.
+The **'Dockerfile'** sets up an Ubuntu 18.04 base image, installs Python 3 and required dependencies (**'numpy'** and **'pandas'**), and copies the **'run.py'** script into the container. The **CMD** instruction specifies the command to run when the container starts.
 
 
 ## Dockerfile
 
-      **FROM ubuntu:18.04**
-      **RUN apt-get update && apt-get install -y python3-pip**
+<code>**FROM ubuntu:18.04**</code>
+<code>**RUN apt-get update && apt-get install -y python3-pip**</code>
       **RUN pip3 install numpy**
       **RUN pip3 install pandas**
       **COPY run.py run.py**
