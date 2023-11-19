@@ -1,4 +1,4 @@
-# Auto Run Project
+# Docker with Python Auto Run Project
    Welcome to the Auto Run Project! This project is designed to showcase a simple Python script that runs indefinitely. The Dockerfile provided allows you to containerize this project using Docker. The script (run.py) prints a welcome message in an infinite loop.
 
 # Prerequisites
